@@ -15,10 +15,12 @@ jobs:
 
 
     steps:
-      - name: 'printing folder content'
+      - name: 'printing folder content before'
         run: ls
 
-      - name: 'testing printing'
-        run: echo yousef
+      - uses: actions/checkout@v3
+
+      - name: 'printing folder content after'
+        run: ls
 
 
